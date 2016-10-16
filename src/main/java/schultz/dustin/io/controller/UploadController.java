@@ -1,5 +1,8 @@
 package schultz.dustin.io.controller;
 
+import com.justgifit.services.ConverterService;
+import com.justgifit.services.GifEncoderService;
+import com.justgifit.services.VideoDecoderService;
 import com.madgag.gif.fmsware.AnimatedGifEncoder;
 import org.bytedeco.javacv.FFmpegFrameGrabber;
 import org.bytedeco.javacv.FrameGrabber;
@@ -9,9 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import schultz.dustin.io.services.ConverterService;
-import schultz.dustin.io.services.GifEncoderService;
-import schultz.dustin.io.services.VideoDecoderService;
+
 
 import javax.inject.Inject;
 import java.io.File;
@@ -49,7 +50,7 @@ public class UploadController {
                 .currentTimeMillis() + ".mp4");
         file.transferTo(videoFile);
 
-        log.info("Saved video file to {}", videoFile.getAbsolutePath());
+        log.info("zhuohua:122: Saved video file to {}", videoFile.getAbsolutePath());
 
         Path output = Paths.get(location + "/gif/" + System.currentTimeMillis() + ".gif");
 
