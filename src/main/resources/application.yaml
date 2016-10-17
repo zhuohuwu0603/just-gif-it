@@ -1,0 +1,8 @@
+# configure auto-configured MultipartConfigElement
+multipart:
+  maxFileSize: 50MB
+  maxRequestSize: 50MB
+  location: ${java.io.tmpdir}
+
+#logging:
+#  level.: DEBUG
