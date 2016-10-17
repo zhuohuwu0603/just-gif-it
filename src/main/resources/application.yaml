@@ -6,3 +6,7 @@ multipart:
 
 #logging:
 #  level.: DEBUG
+
+com:
+  justgifit:
+    gif-location: ${java.io.tmpdir}}
